@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{62BA78F9-CC88-465F-AEDF-B7557B1D0F13}</ProjectGuid>
+    <RootNamespace>directx</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="directx_debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="directx_release.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="DX11Effect.h" />
+    <ClInclude Include="DX11Mesh.h" />
+    <ClInclude Include="DX11Shaders.h" />
+    <ClInclude Include="DX11ShaderTypes.h" />
+    <ClInclude Include="DX11.h" />
+    <ClInclude Include="Elite\EMath.h" />
+    <ClInclude Include="Elite\EMathUtilities.h" />
+    <ClInclude Include="Elite\EMatrix.h" />
+    <ClInclude Include="Elite\EMatrix2.h" />
+    <ClInclude Include="Elite\EMatrix3.h" />
+    <ClInclude Include="Elite\EMatrix4.h" />
+    <ClInclude Include="Elite\EPoint.h" />
+    <ClInclude Include="Elite\EPoint2.h" />
+    <ClInclude Include="Elite\EPoint3.h" />
+    <ClInclude Include="Elite\EPoint4.h" />
+    <ClInclude Include="Elite\ERGBColor.h" />
+    <ClInclude Include="Elite\ETimer.h" />
+    <ClInclude Include="Elite\EVector.h" />
+    <ClInclude Include="Elite\EVector2.h" />
+    <ClInclude Include="Elite\EVector3.h" />
+    <ClInclude Include="Elite\EVector4.h" />
+    <ClInclude Include="ERenderer.h" />
+    <ClInclude Include="JL\Devel.h" />
+    <ClInclude Include="JL\JL.h" />
+    <ClInclude Include="JL\JLAggregate.h" />
+    <ClInclude Include="JL\JLBaseIncludes.h" />
+    <ClInclude Include="JL\JLCamera.h" />
+    <ClInclude Include="JL\JLCameraMovement.h" />
+    <ClInclude Include="JL\JLHash.h" />
+    <ClInclude Include="JL\JLMathUtilities.h" />
+    <ClInclude Include="JL\JLMesh.h" />
+    <ClInclude Include="JL\JLOBJ.h" />
+    <ClInclude Include="JL\JLReadFromIstream.h" />
+    <ClInclude Include="JL\JLReadFromIstream.hpp" />
+    <ClInclude Include="JL\JLStrip.h" />
+    <ClInclude Include="JL\JLTextures.h" />
+    <ClInclude Include="JL\JLUtility.h" />
+    <ClInclude Include="JL\JLVectorTuple.h" />
+    <ClInclude Include="JL\JLVisitor.h" />
+    <ClInclude Include="JL\MathExtra.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="RenderUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DX11Effect.cpp" />
+    <ClCompile Include="DX11Mesh.cpp" />
+    <ClCompile Include="Elite\ETimer.cpp" />
+    <ClCompile Include="ERenderer.cpp" />
+    <ClCompile Include="JL\JLTextures.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RenderUtils.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

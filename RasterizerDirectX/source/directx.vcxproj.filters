@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Math">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{ddb17eba-e15e-4597-8bf6-064b16b159d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{72056cb6-72a2-42b7-b05e-376f1ddd957e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ERenderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="DX11Shaders.h" />
+    <ClInclude Include="DX11Effect.h" />
+    <ClInclude Include="DX11Mesh.h" />
+    <ClInclude Include="DX11ShaderTypes.h" />
+    <ClInclude Include="JL\Devel.h" />
+    <ClInclude Include="JL\JL.h" />
+    <ClInclude Include="JL\JLAggregate.h" />
+    <ClInclude Include="JL\JLBaseIncludes.h" />
+    <ClInclude Include="JL\JLCamera.h" />
+    <ClInclude Include="JL\JLCameraMovement.h" />
+    <ClInclude Include="JL\JLHash.h" />
+    <ClInclude Include="JL\JLMathUtilities.h" />
+    <ClInclude Include="JL\JLMesh.h" />
+    <ClInclude Include="JL\JLOBJ.h" />
+    <ClInclude Include="JL\JLReadFromIstream.h" />
+    <ClInclude Include="JL\JLReadFromIstream.hpp" />
+    <ClInclude Include="JL\JLStrip.h" />
+    <ClInclude Include="JL\JLTextures.h" />
+    <ClInclude Include="JL\JLUtility.h" />
+    <ClInclude Include="JL\JLVectorTuple.h" />
+    <ClInclude Include="JL\JLVisitor.h" />
+    <ClInclude Include="JL\MathExtra.h" />
+    <ClInclude Include="Elite\EMath.h" />
+    <ClInclude Include="Elite\EMathUtilities.h" />
+    <ClInclude Include="Elite\EMatrix.h" />
+    <ClInclude Include="Elite\EMatrix2.h" />
+    <ClInclude Include="Elite\EMatrix3.h" />
+    <ClInclude Include="Elite\EMatrix4.h" />
+    <ClInclude Include="Elite\EPoint.h" />
+    <ClInclude Include="Elite\EPoint2.h" />
+    <ClInclude Include="Elite\EPoint3.h" />
+    <ClInclude Include="Elite\EPoint4.h" />
+    <ClInclude Include="Elite\ERGBColor.h" />
+    <ClInclude Include="Elite\ETimer.h" />
+    <ClInclude Include="Elite\EVector.h" />
+    <ClInclude Include="Elite\EVector2.h" />
+    <ClInclude Include="Elite\EVector3.h" />
+    <ClInclude Include="Elite\EVector4.h" />
+    <ClInclude Include="RenderUtils.h" />
+    <ClInclude Include="DX11.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ERenderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="DX11Effect.cpp" />
+    <ClCompile Include="DX11Mesh.cpp" />
+    <ClCompile Include="JL\JLTextures.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Elite\ETimer.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderUtils.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
